@@ -1,0 +1,45 @@
+{
+    "resourceType": "MedicationRequest",
+    "id": "cfsb1740658303371",
+    "subject": {
+      "reference": "cfsb1740585092005"
+    },
+    "status": "active",
+    "intent": "order",
+    "authoredOn": "2025-02-27",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "code": "23488011000036103",
+          "system": "http://snomed.info/sct",
+          "display": "Lisinopril 10 mg tablet"
+        }
+      ]
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take one 10mg tablet once daily",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ],
+    "note": [
+      {
+        "text": "Initiated as second-line therapy for inadequate BP response"
+      }
+    ]
+  }

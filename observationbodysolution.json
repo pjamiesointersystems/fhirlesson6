@@ -1,0 +1,53 @@
+{
+    "resourceType": "Observation",
+    "id": "cfsb1740597894704",
+    "subject": {
+      "reference": "cfsb1740585092005"
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "code": "85354-9",
+          "system": "http://loinc.org",
+          "display": "Blood pressure panel with all children optional"
+        }
+      ]
+    },
+    "effectiveDateTime": "2025-02-25",
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 150,
+          "unit": "mm[Hg]"
+        }
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 95,
+          "unit": "mm[Hg]"
+        }
+      }
+    ],
+    "device": {
+      "reference": "cfsb1740602919967"
+    }
+  }

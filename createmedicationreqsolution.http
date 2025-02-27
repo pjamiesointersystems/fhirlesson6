@@ -1,0 +1,54 @@
+###
+POST http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/MedicationRequest
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+
+{
+    "resourceType": "MedicationRequest",
+    "id": "cfsb1740658303371",
+    "subject": {
+      "reference": "Patient/70093"
+    },
+    "status": "active",
+    "intent": "order",
+    "authoredOn": "2025-02-27",
+    "medicationCodeableConcept": {
+      "coding": [
+        {
+          "code": "23488011000036103",
+          "system": "http://snomed.info/sct",
+          "display": "Lisinopril 10 mg tablet"
+        }
+      ]
+    },
+    "dosageInstruction": [
+      {
+        "text": "Take one 10mg tablet once daily",
+        "timing": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "route": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "26643006",
+              "display": "Oral route"
+            }
+          ]
+        }
+      }
+    ],
+    "note": [
+      {
+        "text": "Initiated as second-line therapy for inadequate BP response"
+      }
+    ]
+  }
+

@@ -1,0 +1,24 @@
+PATCH http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/MedicationRequest/70097
+Authorization: Basic _System:ISCDEMO
+Accept: application/fhir+json
+content-type: application/json-patch+json
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+
+[
+  {
+    "op": "replace",
+    "path": "/medicationCodeableConcept/coding/0/code",
+    "value": "23489011000036106" 
+  },
+  {
+    "op": "replace",
+    "path": "/medicationCodeableConcept/coding/0/display",
+    "value": "Lisinopril 20 mg tablet"
+  },
+  {
+    "op": "replace",
+    "path": "/dosageInstruction/0/text",
+    "value": "Take one 20mg tablet once daily"
+  }
+]

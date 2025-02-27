@@ -1,0 +1,61 @@
+###
+PUT http://127.0.0.1:8080/csp/healthshare/demo/fhir/r4/Observation/70094
+Authorization: Basic _System:ISCDEMO
+Accept: */*
+content-type: application/fhir+json
+Accept-Encoding: gzip, deflate, br
+Prefer: return=representation
+
+{
+    "resourceType": "Observation",
+    "id": "70094",
+    "subject": {
+      "reference": "Patient/70093"
+    },
+    "status": "final",
+    "code": {
+      "coding": [
+        {
+          "code": "85354-9",
+          "system": "http://loinc.org",
+          "display": "Blood pressure panel with all children optional"
+        }
+      ]
+    },
+    "effectiveDateTime": "2025-02-25",
+    "component": [
+      {
+        "code": {
+          "coding": [
+            {
+              "code": "8480-6",
+              "system": "http://loinc.org",
+              "display": "Systolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 150,
+          "unit": "mm[Hg]"
+        }
+      },
+      {
+        "code": {
+          "coding": [
+            {
+              "code": "8462-4",
+              "system": "http://loinc.org",
+              "display": "Diastolic blood pressure"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 95,
+          "unit": "mm[Hg]"
+        }
+      }
+    ],
+    "device": {
+      "reference": "Device/cfsb1740602919967"
+    }
+  }
