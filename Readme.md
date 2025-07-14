@@ -88,9 +88,7 @@ Edit
   { "code": { "code": "8462-4" }, "valueQuantity": { "value": 95 } }
 ]
 MedicationRequest
-json
-Copy
-Edit
+
 "medicationCodeableConcept": {
   "coding": [{ "code": "23488011000036103", "display": "Lisinopril 10 mg tablet" }]
 },
